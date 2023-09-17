@@ -5,10 +5,10 @@
 128C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\data133394565226759650 1
 108C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\node_modules\@parcel\profiler\package.json133394565173399276 0
 99C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\node_modules\msgpackr-extract\src133394565125779147 1
-78C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\package.json133394565762646634 0
+78C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\package.json133394628044046914 0
 104C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\node_modules\@swc\helpers\cjs\_jsx.cjs133394565204717226 0
 144C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\node_modules\@parcel\optimizer-htmlnano\node_modules\svgo\plugins\prefixIds.js133394565199287834 0
-76C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\.gitignore133394565491742020 0
+76C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\.gitignore133394576597546535 0
 109C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\node_modules\css-what\lib\commonjs\index.js133394565121440335 0
 122C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\node_modules\css-tree\cjs\syntax\node\MediaCondition.cjs133394565209818942 0
 139C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\node_modules\htmlnano\docs\versioned_docs\version-1.1.1\060-contribute.md133394565207517826 0
@@ -19,7 +19,7 @@
 112C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\node_modules\@swc\helpers\cjs\_ts_decorate.cjs133394565210580967 0
 95C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\node_modules\.bin\js-yaml.ps1133394565274699958 0
 121C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\node_modules\@parcel\core\src\serializerCore.browser.js133394565227399480 0
-70C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\dist133394566887335301 1
+70C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\dist133394629758007219 1
 125C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\node_modules\caniuse-lite\data\features\webkit-user-drag.js133394565266511603 0
 103C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\node_modules\semver\functions\sort.js133394565197193332 0
 128C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\node_modules\htmlnano\lib\modules\collapseBooleanAttributes.js133394565151850307 0
@@ -39,7 +39,7 @@
 96C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\node_modules\lmdb\util\when.js133394565224160551 0
 91C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\node_modules\mdn-data\api133394565170945455 1
 106C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\node_modules\react-error-overlay\LICENSE133394565127511422 0
-72C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\app.js133394566877430641 0
+72C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\app.js133394629748035642 0
 87C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\node_modules\entities133394565181678079 1
 121C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\node_modules\@swc\helpers\_\_object_spread\package.json133394565239396721 0
 109C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\node_modules\css-what\lib\es\parse.d.ts.map133394565172149459 0
@@ -50,7 +50,7 @@
 111C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\node_modules\react-error-overlay\package.json133394565165789209 0
 148C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\node_modules\@parcel\optimizer-svgo\node_modules\mdn-data\css\at-rules.schema.json133394565171350281 0
 113C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\node_modules\svgo\plugins\removeStyleElement.js133394565201390018 0
-76C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\index.html133394566478390030 0
+76C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\index.html133394568759158470 0
 139C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\node_modules\csso\node_modules\css-tree\lib\syntax\scope\atrulePrelude.js133394565226059212 0
 127C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\node_modules\@parcel\packager-js\src\ScopeHoistingPackager.js133394565188117886 0
 124C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\node_modules\csso\node_modules\mdn-data\css\selectors.json133394565190086906 0
@@ -904,7 +904,7 @@
 126C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\node_modules\react\cjs\react.shared-subset.production.min.js133394564486947846 0
 130C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\node_modules\htmlnano\lib\modules\collapseAttributeWhitespace.js133394565146080958 0
 106C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\node_modules\cosmiconfig\dist\loaders.js133394565143500205 0
-88C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\dist\index.5baa4167.js133394566887169096 0
+88C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\dist\index.5baa4167.js133394629757819646 0
 120C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\node_modules\type-fest\source\require-exactly-one.d.ts133394565192700478 0
 105C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\node_modules\css-tree\cjs\utils\url.cjs133394565222341243 0
 117C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\node_modules\csso\node_modules\css-tree\lib\data.js133394565229928707 0
@@ -5969,7 +5969,7 @@
 94C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\node_modules\.bin\semver.ps1133394565274719960 0
 92C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\node_modules\.bin\svgo.cmd133394565274719960 0
 110C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\node_modules\.bin\update-browserslist-db.cmd133394565274741127 0
-92C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\dist\index.5baa4167.js.map133394566887310225 0
+92C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\dist\index.5baa4167.js.map133394629757966058 0
 88C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\dist\index.7c0ccee6.js133394566010198569 0
-81C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\dist\index.html133394566886431233 0
+81C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\dist\index.html133394625640408198 0
 108C:\Users\Aashish\OneDrive\Desktop\Developer\React_Getting_Started\dist\React_Getting_Started.3464ddca.js.map133394566010360709 0

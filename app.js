@@ -1,5 +1,27 @@
+/**
+ * 
+ * 
+ * HMR - Hot Module Replacement, done by parcel to work like nodemon, auto reload when saved
+ *  - using File Watcher Algo( written in C++ )
+ *  - MINIFY
+ *  - Code Clean Up
+ *  - Super Fast Build
+ *  - Media Optimisation
+ *  - Caching While Development
+ *  - Compressions
+ *  - COmpatibility with older version of browsers
+ *  - HTTPS on dev env
+ *  - Port no. management
+ * 
+ * 
+ * 
+ * 
+ * Transitive Dependencies
+ */
+
+
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client"; //to remove warning, use /client
 
 const heading1 = React.createElement(
     "h1",
