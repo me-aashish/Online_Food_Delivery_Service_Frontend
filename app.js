@@ -12,6 +12,7 @@
  *  - COmpatibility with older version of browsers
  *  - HTTPS on dev env
  *  - Port no. management
+ *  - Tree SHaking - Removing unwated code
  * 
  * 
  * 
