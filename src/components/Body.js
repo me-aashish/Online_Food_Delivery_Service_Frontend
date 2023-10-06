@@ -1,5 +1,6 @@
 import { ResaturantCard } from "../constants/RestaurantCard";
 import { useState } from "react";
+import { RestaurantList } from "../constants/RestaurantList";
 
 /**
  * useState
@@ -29,14 +30,20 @@ const Body = () => {
                 <button className="serach-btn">Search</button>
             </div>
             <div className="restaurant-list" >
-                <ResaturantCard/>
-                <ResaturantCard/>
-                <ResaturantCard/>
-                <ResaturantCard/>
-                <ResaturantCard/>
-                <ResaturantCard/>
-                <ResaturantCard/>
-                <ResaturantCard/>
+                {
+                    RestaurantList.map((restro) => {
+                        return <ResaturantCard {...restro} />
+                    })
+                }
+                {/* <ResaturantCard {...RestaurantList[0]}/>
+                <ResaturantCard {...RestaurantList[1]}/>
+                <ResaturantCard {...RestaurantList[2]}/>
+                <ResaturantCard {...RestaurantList[3]}/>
+                <ResaturantCard {...RestaurantList[4]}/>
+                <ResaturantCard {...RestaurantList[5]}/>
+                <ResaturantCard {...RestaurantList[6]}/>
+                <ResaturantCard {...RestaurantList[7]}/> */}
+                
             </div>
         </>
     );
