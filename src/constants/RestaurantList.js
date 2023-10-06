@@ -1,51 +1,228 @@
-export const RestaurantList = [
+export const RestaurantList = 
+[
     {
-        link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/rkajxxqff1e5msbcmis9",
-        name: "Chandigarh Restro",
-        cuisines: ["Indian, Chinese"],
-        location: "Sector 46"
+        "info":{
+            "id": "49690",
+            "name": "Domino's Pizza",
+            "cloudinaryImageId": "nzhtc9jzxirjanevzisl",
+            "locality": "Sector 34",
+            "areaName": "Sector 34",
+            "costForTwo": "₹400 for two",
+            "cuisines": [
+              "Pizzas",
+              "Italian",
+              "Pastas",
+              "Desserts"
+            ],
+            "avgRating": 4.2,
+            "feeDetails": {
+              "restaurantId": "49690",
+              "fees": [
+                {
+                  "name": "BASE_DISTANCE",
+                  "fee": 3200
+                },
+                {
+                  "name": "BASE_TIME"
+                },
+                {
+                  "name": "ANCILLARY_SURGE_FEE"
+                }
+              ],
+              "totalFee": 3200
+            },
+            "parentId": "2456",
+            "avgRatingString": "4.2",
+            "totalRatingsString": "1K+",
+            "sla": {
+              "deliveryTime": 21,
+              "lastMileTravel": 1.7,
+              "serviceability": "SERVICEABLE",
+              "slaString": "21 mins",
+              "lastMileTravelString": "1.7 km",
+              "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+              "nextCloseTime": "2023-10-07 00:59:00",
+              "opened": true
+            },
+            "badges": { },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+              "entityBadges": {
+                "imageBased": { },
+                "textBased": { },
+                "textExtendedBadges": { }
+              }
+            },
+            "aggregatedDiscountInfoV3": {
+              "header": "₹150 OFF",
+              "subHeader": "ABOVE ₹299",
+              "discountTag": "FLAT DEAL"
+            },
+            "differentiatedUi": {
+              "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+              "differentiatedUiMediaDetails": {
+                "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                "lottie": { },
+                "video": { }
+              }
+            },
+            "reviewsSummary": { },
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": { }
+        },
+        
+       
     },
     {
-        link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/rtjayyehxc4e4v7lja6d",
-        name: "Bakingo",
-        cuisines: ["Bakery, Desserts"],
-        location: "Sector 43"
+        "info":{
+            "id": "49690",
+            "name": "Subway",
+            "cloudinaryImageId": "1ace5fa65eff3e1223feb696c956b38b",
+            "locality": "Sector 34",
+            "areaName": "Sector 34",
+            "costForTwo": "₹400 for two",
+            "cuisines": [
+              "Pizzas",
+              "Italian",
+              "Pastas",
+              "Desserts"
+            ],
+            "avgRating": 4.2,
+            "feeDetails": {
+              "restaurantId": "49690",
+              "fees": [
+                {
+                  "name": "BASE_DISTANCE",
+                  "fee": 3200
+                },
+                {
+                  "name": "BASE_TIME"
+                },
+                {
+                  "name": "ANCILLARY_SURGE_FEE"
+                }
+              ],
+              "totalFee": 3200
+            },
+            "parentId": "2456",
+            "avgRatingString": "4.2",
+            "totalRatingsString": "1K+",
+            "sla": {
+              "deliveryTime": 21,
+              "lastMileTravel": 1.7,
+              "serviceability": "SERVICEABLE",
+              "slaString": "21 mins",
+              "lastMileTravelString": "1.7 km",
+              "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+              "nextCloseTime": "2023-10-07 00:59:00",
+              "opened": true
+            },
+            "badges": { },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+              "entityBadges": {
+                "imageBased": { },
+                "textBased": { },
+                "textExtendedBadges": { }
+              }
+            },
+            "aggregatedDiscountInfoV3": {
+              "header": "₹150 OFF",
+              "subHeader": "ABOVE ₹299",
+              "discountTag": "FLAT DEAL"
+            },
+            "differentiatedUi": {
+              "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+              "differentiatedUiMediaDetails": {
+                "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                "lottie": { },
+                "video": { }
+              }
+            },
+            "reviewsSummary": { },
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": { }
+        },
     },
     {
-        link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/xwnujftq86flnxlcllgw",
-        name: "Adhikary Foods",
-        cuisines: ["Indian, Chinese, Asian"],
-        location: "Sector 17"
-    },
-    {
-        link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/bhiqtneraycbpeqjworl",
-        name: "Sharma Veg Dhaba",
-        cuisines: ["North Indian, Thalis"],
-        location: "Mohali Phase 6"
-    },
-    {
-        link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/56c9ab92bd79745fd152a30fa2525426",
-        name: "KFC",
-        cuisines: ["Burgers, Fried Chicken, Biryani"],
-        location: "Sector 15"
-    },
-    {
-        link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/da2592e0d25f079cbf9aedf436cabf6f",
-        name: "Shama Biryani",
-        cuisines: ["North Indian, Biryanis"],
-        location: "Sector 35"
-    },
-    {
-        link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/c87ss306gk6akheloq5a",
-        name: "Sundarams",
-        cuisines: ["South Indian, Dosas, Idli"],
-        location: "Sector 46"
-    },
-    {
-        link: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/2b4f62d606d1b2bfba9ba9e5386fabb7",
-        name: "Pizza",
-        cuisines: ["Italian, Pizzas"],
-        location: "Sector 22"
+        "info":{
+            "id": "49690",
+            "name": "La Pino'z Pizza",
+            "cloudinaryImageId": "r1d87f1qiql6xbulfbt9",
+            "locality": "Sector 34",
+            "areaName": "Sector 34",
+            "costForTwo": "₹400 for two",
+            "cuisines": [
+              "Pizzas",
+              "Italian",
+              "Pastas",
+              "Desserts"
+            ],
+            "avgRating": 4.2,
+            "feeDetails": {
+              "restaurantId": "49690",
+              "fees": [
+                {
+                  "name": "BASE_DISTANCE",
+                  "fee": 3200
+                },
+                {
+                  "name": "BASE_TIME"
+                },
+                {
+                  "name": "ANCILLARY_SURGE_FEE"
+                }
+              ],
+              "totalFee": 3200
+            },
+            "parentId": "2456",
+            "avgRatingString": "4.2",
+            "totalRatingsString": "1K+",
+            "sla": {
+              "deliveryTime": 21,
+              "lastMileTravel": 1.7,
+              "serviceability": "SERVICEABLE",
+              "slaString": "21 mins",
+              "lastMileTravelString": "1.7 km",
+              "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+              "nextCloseTime": "2023-10-07 00:59:00",
+              "opened": true
+            },
+            "badges": { },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+              "entityBadges": {
+                "imageBased": { },
+                "textBased": { },
+                "textExtendedBadges": { }
+              }
+            },
+            "aggregatedDiscountInfoV3": {
+              "header": "₹150 OFF",
+              "subHeader": "ABOVE ₹299",
+              "discountTag": "FLAT DEAL"
+            },
+            "differentiatedUi": {
+              "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+              "differentiatedUiMediaDetails": {
+                "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                "lottie": { },
+                "video": { }
+              }
+            },
+            "reviewsSummary": { },
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": { }
+        },
     }
-
 ]
+    

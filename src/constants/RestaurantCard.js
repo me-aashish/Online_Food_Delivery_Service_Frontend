@@ -1,11 +1,12 @@
 import { RestaurantList } from "./RestaurantList"
+import { imageCDNLINK } from "./imageCDNLink"
 export const ResaturantCard = (props) => {
     return (
         <div className="card">
-            <img src={props.link}></img>
-            <h2>{props.name}</h2>
-            <h3>{props.cuisines.join(", ")}</h3>
-            <h4>{props.location}</h4>
+            <img src={ imageCDNLINK +  props?.info?.cloudinaryImageId}></img>
+            <h2>{props?.info?.name}</h2>
+            <h3>{props?.info?.cuisines.join(", ")}</h3>
+            <h4>{props?.info?.locality}</h4>
         </div>
     )
 }
