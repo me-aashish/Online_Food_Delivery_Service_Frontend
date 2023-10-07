@@ -22,6 +22,7 @@ import Shimmer from "./shimmer";
  *          - empty dependency array ([]) -> called once after render
  *          - dependency array eg. [serachText] -> called once after initial render + everytime after re-render i.e. 
  *              when serachText is changed.  
+ *          - if dependency array is not passed then useEffect will be called after very re-render.
  *
  * 
  */
