@@ -79,7 +79,12 @@ const Body = () => {
           filteredRestaurants.map((restro, index) => {
             return <ResaturantCard {...restro} key={index} />;
           })
+          
+          
+
         }
+        
+        
       </div>
     </>
   );
