@@ -38,6 +38,10 @@
     padding-left: 125px;
 }
 
+.card:hover{
+    background-color: lightgrey;
+}
+
 .search-container{
     padding-left: 9px;
 }
@@ -59,3 +63,13 @@
 .nav-lists > li{
     text-decoration: none;
 }
+
+.menu{
+    display: flex;
+}
+
+.menu > div > img{
+    width: 40%;
+    height: 35%;
+}
+

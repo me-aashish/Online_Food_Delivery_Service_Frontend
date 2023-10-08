@@ -2,6 +2,7 @@ import { ResaturantCard } from "../constants/RestaurantCard";
 import { useState, useEffect } from "react";
 import { RestaurantList } from "../constants/RestaurantList";
 import Shimmer from "./shimmer";
+import { Link } from "react-router-dom";
 
 /**
  * useState
@@ -53,9 +54,9 @@ const Body = () => {
     );
 
     const json = await data.json();
-    console.log(
-      json.data.cards[5].card.card.gridElements.infoWithStyle.restaurants
-    );
+    // console.log(
+    //   json.data.cards[5].card.card.gridElements.infoWithStyle.restaurants
+    // );
     setAllRestaurants(
       json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
@@ -90,8 +91,9 @@ const Body = () => {
         </button>
       </div>
       <div className="restaurant-list">
-        {filteredRestaurants.map((restro, index) => {
-          return <ResaturantCard {...restro} key={index} />;
+        {filteredRestaurants.map((restro) => {
+          console.log(restro.info);
+          return <Link to={"/restaurant/" + restro.info.id}  key={restro.info.id} ><ResaturantCard {...restro}/></Link>;
         })}
       </div>
     </>

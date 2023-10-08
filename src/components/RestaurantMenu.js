@@ -1,32 +1,37 @@
 import { useParams } from "react-router";
 import { useEffect, useState } from "react";
 import { imageCDNLINK } from "../constants/imageCDNLink";
+import Shimmer from "./shimmer";
 
 const RestaurantMenu = () => {
-  const [restro, setRestro] = useState({});  
+  const [restro, setRestro] = useState(null);  
   useEffect(() => {
     getRestaurant();
   }, []);
 
-
+  const { id } = useParams();
   getRestaurant = async () => {
     const data = await fetch(
-      "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=30.7333148&lng=76.7794179&restaurantId=49690&catalog_qa=undefined&submitAction=ENTER"
+      `https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=30.7333148&lng=76.7794179&restaurantId=${id}&catalog_qa=undefined&submitAction=ENTER`
     );
 
     const json = await data.json();
-    console.log(json.data.cards[2].groupedCard.cardGroupMap.REGULAR.cards[2].card.card.itemCards);
-    json.data.cards[2].groupedCard.cardGroupMap.REGULAR.cards[2].card.card.itemCards.map((menuItems)=>{
-      console.log(menuItems.card.info.name);
-    })
+    // console.log(json.data.cards[2].groupedCard.cardGroupMap.REGULAR.cards[2].card.card.itemCards);
+    // json.data.cards[2].groupedCard.cardGroupMap.REGULAR.cards[2].card.card.itemCards.map((menuItems)=>{
+    //   console.log(menuItems.card.info.name);
+    // })
 
     // console.log(restro?.data?.cards[0]?.card?.card?.info?.id);
     setRestro(json);
   };
 
-  const { id } = useParams();
+  
+
+  // early return
+  if(!restro) return <Shimmer />;
+
   return (
-    <div>
+    <div className="menu">
       <div>
         <h1>
           Welcome to restaurant with id :{" "}
@@ -52,8 +57,8 @@ const RestaurantMenu = () => {
       <div>
         <h1>Menu</h1>
         <ul>
-          {restro?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card?.itemCards.map((menuItems) => (
-            <li>{menuItems.card.info.name}</li>
+          {restro?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card?.itemCards?.map((menuItems,index) => (
+            <li key={index}>{menuItems.card.info.name}</li>
           ))}
         </ul>
       </div>
