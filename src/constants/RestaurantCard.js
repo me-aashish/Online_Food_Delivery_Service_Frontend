@@ -5,7 +5,7 @@ export const ResaturantCard = (props) => {
         <div className="card">
             <img src={ imageCDNLINK +  props?.info?.cloudinaryImageId}></img>
             <h2>{props?.info?.name}</h2>
-            <h3>{props?.info?.cuisines.join(", ")}</h3>
+            <h3>{props?.info?.cuisines.join(", ").split(", ").slice(0,2).join(", ")}</h3>
             <h4>{props?.info?.locality}</h4>
         </div>
     )
