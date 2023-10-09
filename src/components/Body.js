@@ -93,7 +93,7 @@ const Body = () => {
       <div className="restaurant-list">
         {filteredRestaurants.map((restro) => {
           console.log(restro.info);
-          return <Link to={"/restaurant/" + restro.info.id}  key={restro.info.id} ><ResaturantCard {...restro}/></Link>;
+          return <Link to={"/restaurant/" + restro?.info?.id}  key={restro?.info?.id} ><ResaturantCard {...restro}/></Link>;
         })}
       </div>
     </>
