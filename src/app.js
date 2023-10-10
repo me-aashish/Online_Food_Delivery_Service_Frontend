@@ -50,6 +50,7 @@ import About from "./components/About";
 import Error from "./components/Error";
 import Contact from "./components/Contact";
 import RestaurantMenu from "./components/RestaurantMenu";
+import Profile from "./components/Profile";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
 
@@ -87,7 +88,13 @@ const appRouter = createBrowserRouter([
             },
             {
                 path: "/about",
-                element: <About />
+                element: <About />,
+                // for nested routes -> make childrens of children
+                children: [{
+                    path: "profile",  // use relative route, don't use "/" before children of children path 
+                            // if we do /profile then react router dom wil consider it as - localhost:1234 profile
+                    element: <Profile />   
+                }]
             },
             {
                 path: "/contact",
