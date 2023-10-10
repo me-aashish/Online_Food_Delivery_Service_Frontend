@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { RestaurantList } from "../constants/RestaurantList";
 import Shimmer from "./shimmer";
 import { Link } from "react-router-dom";
+import { filterData } from "../utils/helper";
 
 /**
  * useState
@@ -27,17 +28,6 @@ import { Link } from "react-router-dom";
  *
  *
  */
-
-function filterData(searchText, restaurant) {
-  if (searchText) {
-    console.log(restaurant);
-    const newData = restaurant.filter((restro) =>
-      restro?.info?.name?.toLowerCase()?.includes(searchText.toLowerCase())
-    );
-    return newData;
-  }
-  return restaurant;
-}
 
 const Body = () => {
   const [searchText, setSerachText] = useState("");
@@ -91,9 +81,13 @@ const Body = () => {
         </button>
       </div>
       <div className="restaurant-list">
-        { filteredRestaurants.map((restro) => {
+        {filteredRestaurants.map((restro) => {
           console.log(restro.info);
-          return  <Link to={"/restaurant/" + restro?.info?.id}  key={restro?.info?.id} ><ResaturantCard {...restro}/></Link>;
+          return (
+            <Link to={"/restaurant/" + restro?.info?.id} key={restro?.info?.id}>
+              <ResaturantCard {...restro} />
+            </Link>
+          );
         })}
       </div>
     </>
