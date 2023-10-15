@@ -4,6 +4,7 @@ import { RestaurantList } from "../constants/RestaurantList";
 import Shimmer from "./shimmer";
 import { Link } from "react-router-dom";
 import { filterData } from "../utils/helper";
+import useOnline from "../utils/useOnline";
 
 /**
  * useState
@@ -54,6 +55,10 @@ const Body = () => {
       json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
   }
+
+  const isOnline = useOnline();
+
+  if(!isOnline) return <h1>Oops! You're Offline</h1>
 
   if (!allRestaurants) return null;
   return allRestaurants.length === 0 ? (
