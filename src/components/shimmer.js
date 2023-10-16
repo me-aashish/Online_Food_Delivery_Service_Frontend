@@ -1,7 +1,7 @@
 const Shimmer = () => {
     return (
-        <div className="restaurant-list">
-            {Array(20).fill("").map((ele,index)=><div className="simmer-card" key={index}></div>)}
+        <div className="flex flex-wrap">
+            {Array(20).fill("").map((ele,index)=><div className="w-52 h-72 bg-gray-100 m-4" key={index}></div>)}
         </div>
     )
 };
