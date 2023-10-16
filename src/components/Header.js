@@ -21,7 +21,7 @@ const Header = () => {
 
                 </ul>
             </div>
-            {isLoggedIn ? <button className="w-16 h-12 mt-5 mr-4 hover:bg-pink-200 rounded-lg" onClick={() => setIsLoggedIn(false)}>Log Out</button> : <button className="w-16 h-12 mt-5 mr-4 hover:bg-pink-200 rounded-lg" onClick={() => setIsLoggedIn(true)}>Log In</button>}
+            {isLoggedIn ? <button className="w-16 h-12 mt-5 mr-4 hover:bg-pink-200 rounded-lg bg-purple-200 shadow-lg" onClick={() => setIsLoggedIn(false)}>Log Out</button> : <button className="w-16 h-12 mt-5 mr-4 hover:bg-pink-200 rounded-lg bg-purple-200 shadow-lg" onClick={() => setIsLoggedIn(true)}>Log In</button>}
         </div>
     );
 };

@@ -69,7 +69,7 @@ const Body = () => {
         <input
           type="text"
           placeholder="Search"
-          className="serach-input rounded-lg shadow-lg"
+          className="focus:bg-gray-200 rounded-lg shadow-lg p-1 m-1"
           value={searchText}
           onChange={(e) => {
             setSerachText(e.target.value);
