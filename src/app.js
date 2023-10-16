@@ -52,6 +52,7 @@ import Contact from "./components/Contact";
 import RestaurantMenu from "./components/RestaurantMenu";
 import Profile from "./components/Profile";
 // import Instamart from "./components/Instamart";
+import Shimmer from "./components/Shimmer";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
 /**
@@ -76,6 +77,12 @@ const Instamart = lazy(() => import("./components/Instamart"));
 //upon On Demand Loading -> upon Render -> react will suspend loading -> hence we will not be able to see lazy loaded component while moving to that component, so we'll have to use "<SUSPENSE></SUSPENSE>"
 
 const AppLayout = () => {
+
+    // never ever dynamically load one component inside another component bacause it will be lazy loaded every after
+    // render cycle which is not good
+    
+    //const Instamart = lazy(() => import("./components/Instamart"));
+
   return (
     <>
       <Header />
@@ -118,9 +125,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/restaurant/instamart",
         element: (
-          <Suspense>
+          <Suspense fallback = {<Shimmer />}>
             <Instamart />
-          </Suspense> // using suspense so that react wont stop loading 
+          </Suspense> // using suspense so that react wont stop loading and this suspense can take a prop know as
+                    // fallback to show anything which you want while component loads like shimmer or loading animation
         ),
       },
     ],
