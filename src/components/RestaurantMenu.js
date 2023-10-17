@@ -13,7 +13,7 @@ const RestaurantMenu = () => {
   if(!restro) return <Shimmer />;
 
   return (
-    <div className="menu">
+    <div className="flex p-2 m-2">
       <div>
         <h1>
           Welcome to restaurant with id :{" "}
@@ -29,18 +29,18 @@ const RestaurantMenu = () => {
           Rating : {restro?.data?.cards[0]?.card?.card?.info?.avgRatingString} /
           5
         </h5>
-        <img
+        <img className="w-28"
           src={
             imageCDNLINK +
             restro?.data?.cards[0]?.card?.card?.info?.cloudinaryImageId
           }
         />
       </div>
-      <div>
+      <div className="ml-96">
         <h1>Menu</h1>
-        <ul>
+        <ul className="">
           {restro?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card?.itemCards?.map((menuItems,index) => (
-            <li key={index}>{menuItems.card.info.name}</li>
+            <li className="ml-8 list-disc" key={index}>{menuItems.card.info.name}</li>
           ))}
         </ul>
       </div>
