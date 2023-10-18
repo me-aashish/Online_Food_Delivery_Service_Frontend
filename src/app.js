@@ -54,6 +54,8 @@ import Profile from "./components/Profile";
 // import Instamart from "./components/Instamart";
 import Shimmer from "./components/Shimmer";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import { Provider } from "react-redux";
+import store from "./utils/store";
 
 /**
  * React.fragment allows to have multiple parent within a component
@@ -84,11 +86,11 @@ const AppLayout = () => {
     //const Instamart = lazy(() => import("./components/Instamart"));
 
   return (
-    <>
+    <Provider store = {store}>
       <Header />
       <Outlet />
       <Footer />
-    </>
+    </Provider>
   );
 };
 
