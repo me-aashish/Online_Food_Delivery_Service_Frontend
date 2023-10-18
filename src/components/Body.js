@@ -1,10 +1,10 @@
 import { ResaturantCard } from "../constants/RestaurantCard";
-import { useState, useEffect } from "react";
-import { RestaurantList } from "../constants/RestaurantList";
+import { useState, useEffect, useContext } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import { filterData } from "../utils/helper";
 import useOnline from "../utils/useOnline";
+import UserContext from "../utils/UserContext";
 
 /**
  * useState
@@ -84,6 +84,7 @@ const Body = () => {
         >
           Search
         </button>
+        
       </div>
       <div className="flex flex-wrap">
         {filteredRestaurants.map((restro) => {

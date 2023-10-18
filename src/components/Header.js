@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 export const Title = () => {
     return (
@@ -18,7 +18,6 @@ const Header = () => {
                     <li className = "px-2 hover:bg-pink-200 rounded-lg"><Link to="/contact">Contact</Link></li>
                     <li className = "px-2 hover:bg-pink-200 rounded-lg"><Link to="/restaurant/instamart">Instamart</Link></li>
                     <li className = "px-2 hover:bg-pink-200 rounded-lg">Cart</li>
-
                 </ul>
             </div>
             {isLoggedIn ? <button className="w-16 h-12 mt-5 mr-4 hover:bg-pink-200 rounded-lg bg-purple-200 shadow-lg" onClick={() => setIsLoggedIn(false)}>Log Out</button> : <button className="w-16 h-12 mt-5 mr-4 hover:bg-pink-200 rounded-lg bg-purple-200 shadow-lg" onClick={() => setIsLoggedIn(true)}>Log In</button>}
