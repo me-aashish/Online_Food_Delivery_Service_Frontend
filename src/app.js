@@ -56,6 +56,7 @@ import Shimmer from "./components/Shimmer";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import { Provider } from "react-redux";
 import store from "./utils/store";
+import Cart from "./components/Cart";
 
 /**
  * React.fragment allows to have multiple parent within a component
@@ -132,6 +133,10 @@ const appRouter = createBrowserRouter([
           </Suspense> // using suspense so that react wont stop loading and this suspense can take a prop know as
                     // fallback to show anything which you want while component loads like shimmer or loading animation
         ),
+      },
+      {
+        path: "/cart",
+        element: <Cart />,
       },
     ],
   },
