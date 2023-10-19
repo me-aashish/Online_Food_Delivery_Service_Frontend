@@ -3,12 +3,17 @@ import { useEffect, useState } from "react";
 import { imageCDNLINK } from "../constants/imageCDNLink";
 import useRestaurant from "../utils/useRestaurant";
 import Shimmer from "./Shimmer";
+import { addItem } from "../utils/cartSlice";
+import { useDispatch } from "react-redux";
 
 const RestaurantMenu = () => {
   const { id } = useParams();
 
   const restro = useRestaurant(id);
-
+  const dispatch = useDispatch();
+  const handleAddItem = (foodItem) => {
+    dispatch(addItem(foodItem));
+  }
   // early return
   if(!restro) return <Shimmer />;
 
@@ -36,11 +41,16 @@ const RestaurantMenu = () => {
           }
         />
       </div>
+      <div>
+        
+      </div>
       <div className="ml-96">
         <h1>Menu</h1>
         <ul className="">
           {restro?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card?.itemCards?.map((menuItems,index) => (
-            <li className="ml-8 list-disc" key={index}>{menuItems.card.info.name}</li>
+            <>
+            <li className="ml-8 list-disc" key={index}>{menuItems?.card?.info?.name}<button className="p-2 m-2 hover:bg-pink-200 rounded-lg bg-purple-200 shadow-lg" key={index} onClick={()=> handleAddItem(menuItems?.card?.info)}>Add Item</button></li>
+            </>
           ))}
         </ul>
       </div>
