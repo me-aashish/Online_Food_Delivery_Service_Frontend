@@ -65,7 +65,7 @@ const Body = () => {
     <Shimmer />
   ) : (
     <>
-      <div className="p-5 bg-pink-50 border-2 mt-2 shadow-lg">
+      <div className="p-5 bg-pink-50 border-2 mt-2 shadow-lg ">
         <input
           type="text"
           placeholder="Search"

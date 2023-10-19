@@ -7,20 +7,24 @@ const Cart = () => {
   const cartItems = useSelector((store) => store.cart.items);
   const dispatch = useDispatch();
   const clearCartHandler = () => {
-        dispatch(clearCart());
-  }
+    dispatch(clearCart());
+  };
   console.log(cartItems);
   return (
     <div>
-      <h1 className="font-bold text-2xl p-2 m-2">Welcome to Cart - {cartItems.length} items present</h1>
-      <button className = "p-2 m-2 hover:bg-pink-200 rounded-lg bg-purple-200 shadow-lg" onClick = {()=> clearCartHandler()}>Clear Cart</button>
+      <h1 className="font-bold text-2xl p-2 m-2">
+        Welcome to Cart - {cartItems.length} items present
+      </h1>
+      {cartItems.length > 0 && <button
+        className="p-2 m-2 hover:bg-pink-200 rounded-lg bg-purple-200 shadow-lg"
+        onClick={() => clearCartHandler()}
+      >
+        Clear Cart
+      </button>}
       <div className="flex">
         {cartItems.map((item) => {
-            return (
-                <FoodItemInCart item = {item} />
-            )
+          return <FoodItemInCart item={item} />;
         })}
-       
       </div>
     </div>
   );

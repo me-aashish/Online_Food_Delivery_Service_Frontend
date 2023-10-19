@@ -49,7 +49,7 @@ const RestaurantMenu = () => {
         <ul className="">
           {restro?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card?.itemCards?.map((menuItems,index) => (
             <>
-            <li className="ml-8 list-disc" key={index}>{menuItems?.card?.info?.name}<button className="p-2 m-2 hover:bg-pink-200 rounded-lg bg-purple-200 shadow-lg" key={index*100} onClick={()=> handleAddItem(menuItems?.card?.info)}>Add Item</button></li>
+            <li className="ml-8 list-disc" key={index}>{menuItems?.card?.info?.name}<button className="p-2 m-2 hover:bg-pink-200 rounded-lg bg-purple-200 shadow-lg" key={index} onClick={()=> handleAddItem(menuItems?.card?.info)}>Add Item</button></li>
             </>
           ))}
         </ul>
