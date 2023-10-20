@@ -62,7 +62,7 @@ const Body = () => {
 
   if (!allRestaurants) return null;
   return allRestaurants.length === 0 ? (
-    <Shimmer />
+    <Shimmer  />
   ) : (
     <>
       <div className="p-5 bg-pink-50 border-2 mt-2 shadow-lg ">
