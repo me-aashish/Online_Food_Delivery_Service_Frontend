@@ -18,3 +18,18 @@ test("Logo should load on rendering header", () => {
   expect(logo[0].src).toBe(logoLink);
 //   console.log(logo);
 });
+
+test("Cart should have 0 items on rendering", () => {
+    const header = render(
+      <StaticRouter>
+        <Provider store={store}>
+          <Header />
+        </Provider>
+      </StaticRouter>
+    );
+  
+    const numItems = header.getByTestId("num-items-in-cart");
+    expect(numItems.innerHTML).toBe("0");
+  //   console.log(logo);
+  });
+  

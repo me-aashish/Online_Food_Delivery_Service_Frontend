@@ -45,9 +45,9 @@ const Header = () => {
             <div>
               <strong className="relative inline-flex items-center  border-gray-200 px-2.5 py-1.5 text-xs font-medium">
                 {cartItems.length > 0 && <span class="absolute -top-2 -right-2 h-5 w-5 rounded-full bg-red-600 flex justify-center items-center items">
-                  <span>{cartItems.length}</span>
+                  <span data-testid="num-items-in-cart">{cartItems.length}</span>
                 </span>}
-                <span className="drop-shadow-lg"> 🛒 </span>
+                <span className="drop-shadow-lg" > 🛒 </span>
               </strong>
             </div>
             </Link>
