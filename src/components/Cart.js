@@ -21,7 +21,7 @@ const Cart = () => {
       >
         Clear Cart
       </button>}
-      <div className="flex">
+      <div className="flex flex-wrap">
         {cartItems.map((item) => {
           return <FoodItemInCart item={item} />;
         })}

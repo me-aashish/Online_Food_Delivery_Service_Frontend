@@ -26,10 +26,10 @@ class ProfileClass extends Component{
 
     render(){
         return (
-            <div className="userInfo-container">  
-                <img src={this.state.userInfo?.avatar_url} />
-                <h2>Name : {this.state.userInfo?.name}</h2>
-                <h2>Location: {this.state.userInfo?.location}</h2>
+            <div className="userInfo-container p-2 m-2">  
+                <img src={this.state.userInfo?.avatar_url} className="h-52 w-52"/>
+                <h2 className="font-semibold text-lg">Name : {this.state.userInfo?.name}</h2>
+                <h2 className="font-semibold text-lg">Location: {this.state.userInfo?.location}</h2>
             </div>
         )
     }
